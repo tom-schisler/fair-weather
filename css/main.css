@@ -1,5 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Work+Sans&display=swap");
+@import url("//fonts.googleapis.com/css2?family=EB+Garamond&family=Work+Sans&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -411,10 +411,10 @@ article.weather-display .info-columns > span:last-of-type:after {
 }
 article.weather-display .details .humidity:before {
   content: "";
-  background-image: url(/img/humidity.svg);
+  background-image: url(../img/humidity.svg);
 }
 article.weather-display .details .wind:after {
-  background-image: url(/img/wind.svg);
+  background-image: url(../img/wind.svg);
 }
 article.weather-display .sun {
   -webkit-margin-before: var(--spacing);
@@ -422,9 +422,9 @@ article.weather-display .sun {
 }
 article.weather-display .sun .sunrise:before {
   content: "";
-  background-image: url(/img/sunrise.svg);
+  background-image: url(../img/sunrise.svg);
 }
 article.weather-display .sun .sunset:after {
   content: "";
-  background-image: url(/img/sunset.svg);
+  background-image: url(../img/sunset.svg);
 }
