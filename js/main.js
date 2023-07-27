@@ -30,13 +30,13 @@ async function checkWeather(city){
         } else if (data.weather[0].main == "Clouds") {
             weatherIcon.innerHTML = '<img src="img/clouds.svg" alt="Clouds" />'
         } else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.innerHTML = '<img src="img/Drizzle.svg" alt="Drizzle" />'
+            weatherIcon.innerHTML = '<img src="img/drizzle.svg" alt="Drizzle" />'
         } else if (data.weather[0].main == "Mist") {
-            weatherIcon.innerHTML = '<img src="img/Mist.svg" alt="Mist" />'
+            weatherIcon.innerHTML = '<img src="img/mist.svg" alt="Mist" />'
         } else if (data.weather[0].main == "Rain") {
-            weatherIcon.innerHTML = '<img src="img/Rain.svg" alt="Rain" />'
+            weatherIcon.innerHTML = '<img src="img/rain.svg" alt="Rain" />'
         } else if (data.weather[0].main == "Snow") {
-            weatherIcon.innerHTML = '<img src="img/Snow.svg" alt="Snow" />'
+            weatherIcon.innerHTML = '<img src="img/snow.svg" alt="Snow" />'
         }
     
         document.querySelector(".weather-display").style.display = "block";
