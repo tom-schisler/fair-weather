@@ -1,16 +1,9 @@
-// api 
-// http://api.openweathermap.org/data/2.5/weather?q=Baltimore,US&APPID=b1878f2ffc29aff5ccaab85e9e259392&units=imperial
-
-
-
 const apiKey = "b1878f2ffc29aff5ccaab85e9e259392";
 const apiURL = "//api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 
 const searchBox =  document.querySelector(".weather-search input");
 const searchBtn =  document.querySelector(".weather-search button");
 const weatherIcon = document.querySelector(".weather-icon .icon");
-
-const iconClear = "svg code";
 
 async function checkWeather(city){
     const response = await fetch(apiURL + city + `&appid=${apiKey}`);
