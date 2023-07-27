@@ -119,12 +119,12 @@ article {
             .humidity {
                 &:before {
                     content: '';
-                    background-image: url(/img/humidity.svg);
+                    background-image: url(img/humidity.svg);
                 }
             }
             .wind {
                 &:after {
-                    background-image: url(/img/wind.svg);
+                    background-image: url(img/wind.svg);
                 }
             }
         }
@@ -134,13 +134,13 @@ article {
             .sunrise {
                 &:before {
                     content: '';
-                    background-image: url(/img/sunrise.svg);
+                    background-image: url(img/sunrise.svg);
                 }
             }
             .sunset {
                 &:after {
                     content: '';
-                    background-image: url(/img/sunset.svg);
+                    background-image: url(img/sunset.svg);
                 }
             }
         }

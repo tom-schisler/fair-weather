@@ -33,17 +33,17 @@ async function checkWeather(city){
         document.querySelector(".sunset").innerHTML = "<em class='sr-only'>Sunset</em> " + moment(data.sys.sunset * 1000).format('h:mm a');   
 
         if (data.weather[0].main == "Clear") {
-            weatherIcon.innerHTML = '<img src="/fair-weather/img/clear.svg" alt="Clear" />'
+            weatherIcon.innerHTML = '<img src="img/clear.svg" alt="Clear" />'
         } else if (data.weather[0].main == "Clouds") {
-            weatherIcon.innerHTML = '<img src="/fair-weather/img/clouds.svg" alt="Clouds" />'
+            weatherIcon.innerHTML = '<img src="img/clouds.svg" alt="Clouds" />'
         } else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.innerHTML = '<img src="/fair-weather/img/Drizzle.svg" alt="Drizzle" />'
+            weatherIcon.innerHTML = '<img src="img/Drizzle.svg" alt="Drizzle" />'
         } else if (data.weather[0].main == "Mist") {
-            weatherIcon.innerHTML = '<img src="/fair-weather/img/Mist.svg" alt="Mist" />'
+            weatherIcon.innerHTML = '<img src="img/Mist.svg" alt="Mist" />'
         } else if (data.weather[0].main == "Rain") {
-            weatherIcon.innerHTML = '<img src="/fair-weather/img/Rain.svg" alt="Rain" />'
+            weatherIcon.innerHTML = '<img src="img/Rain.svg" alt="Rain" />'
         } else if (data.weather[0].main == "Snow") {
-            weatherIcon.innerHTML = '<img src="/fair-weather/img/Snow.svg" alt="Snow" />'
+            weatherIcon.innerHTML = '<img src="img/Snow.svg" alt="Snow" />'
         }
     
         document.querySelector(".weather-display").style.display = "block";
