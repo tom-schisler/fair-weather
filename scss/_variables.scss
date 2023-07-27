@@ -1,0 +1,24 @@
+:root {
+    // colors - https://colorhunt.co/palette/30384147555e7aa5d2eeeeee
+    --color-1: #303841;
+    --color-2: #47555e;
+    --color-3: #7aa5d2;
+    --color-4: #eeeeee;
+
+    --spacing: 1.5rem;
+    --radius: 1.5rem;
+
+    // fonts
+    --font-sans: 'Work Sans', sans-serif;
+    --font-serif: 'EB Garamond', serif;
+    --font-size: 1rem;
+    --font-weight: normal;
+    --line-height: 1.5;
+    
+    // breakpoints 
+    --bp-sm: 37.5rem;   // 600px
+    --bp-md: 50rem;     // 800px
+    --bp-lg: 62.5rem;   // 1000px
+    --bp-xl: 75rem;     // 1200px
+    
+}

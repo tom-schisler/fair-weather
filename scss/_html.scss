@@ -1,0 +1,20 @@
+::selection {
+	background-color: var(--color-4);
+    color: var( --color-3);
+}
+
+::placeholder{
+    color: var( --color-4);
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    margin: 0;
+    padding: 0;
+}

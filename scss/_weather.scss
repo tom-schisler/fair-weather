@@ -1,0 +1,148 @@
+section.weather-app {
+    margin: 0 auto;
+    padding: var(--spacing);
+    border-radius: var(--radius);
+    text-align: center;
+}
+article {
+    &.weather-search {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-content: center;
+        background: var(--color-2);
+        color: var(--color-4);
+        border-radius: var(--radius);
+        padding: calc(var(--spacing)/2) var(--spacing); 
+        line-height: 1;
+
+        input {
+            all: unset;
+            text-align: left;
+        }
+
+        button {
+            all: unset;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+                img {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    &.weather-error {
+        display: none;
+    }
+    &.weather-display {
+        display: none;
+        header {
+            h2 {
+                font-size: calc(var(--font-size)*3);
+            }
+        }
+        .weather-icon {
+            picture {
+                display: inline-block;
+                margin: 0 auto;
+                padding: 0;
+                width: 6.25rem;
+                height: 6.25rem;                
+            }
+            figcaption {
+                text-transform: capitalize;
+            }
+        }
+        .temperature-details {
+
+            margin-block-end: calc(var(--spacing)*2.5);
+            .actual {
+                font-size: calc(var(--font-size)*2);
+                line-height: calc(var(--line-height)*.75);
+            }
+            .feels-like {
+                font-size: calc(var(--font-size)*.95);
+                em {
+                    font-style: normal;
+                }
+            }
+        }
+
+        .info-columns {
+            margin: 0 auto;
+            padding: 0;
+            width: 75%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-content: center;
+            > span {
+                display: inline-flex;
+                flex-flow: row nowrap;
+                align-content: center;
+                font-size: calc(var(--font-size)*1.25);
+                line-height: calc(var(--line-height)*.75);
+                &:first-of-type {
+                    text-align: left;
+                    &:before {
+                        content: '';
+                        margin: 0 calc(var(--spacing)/2) 0 0;
+                        display: block;
+                        background-size: cover;
+                        background-position: left center;
+                        background-repeat: none;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+                &:last-of-type {
+                    text-align: right;
+                    &:after {
+                        content: '';
+                        margin: 0 0 0 calc(var(--spacing)/2);
+                        display: block;
+                        background-size: cover;
+                        background-position: left center;
+                        background-repeat: none;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+
+            }
+        }
+
+        .details {
+            .humidity {
+                &:before {
+                    content: '';
+                    background-image: url(/img/humidity.svg);
+                }
+            }
+            .wind {
+                &:after {
+                    background-image: url(/img/wind.svg);
+                }
+            }
+        }
+
+        .sun {
+            margin-block-start: var(--spacing);
+            .sunrise {
+                &:before {
+                    content: '';
+                    background-image: url(/img/sunrise.svg);
+                }
+            }
+            .sunset {
+                &:after {
+                    content: '';
+                    background-image: url(/img/sunset.svg);
+                }
+            }
+        }
+    }
+}

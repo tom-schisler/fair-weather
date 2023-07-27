@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fair-Weather Friend</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Fair-Weather Friend</h1>
+    </header>
+
+    <main>
+
+        <section class="weather-app">
+
+            <article class="weather-search">
+                <label for="weather-search-city" class="sr-only">Enter City Name</label>
+                <input id="weather-search-city" type="text" placeholder="Enter City Name" spellcheck="false">
+                <button>
+                    <img class="icon" src="/img/search.svg" alt="Search by City" width="20" height="20" />
+                </button>
+            </article>
+
+            <article class="weather-error">
+                <p>You're on thin ice, try another city.</p>
+            </article>
+            
+            <article class="weather-display">
+                <header>
+                    <h2 class="city">Baltimore</h2>
+                </header>
+                
+                <figure class="weather-icon">
+                    <picture class="icon"></picture>
+                    <figcaption class="description">Raining cats &amp; dogs</figcaption>
+                </figure>
+                
+                <article class="temperature-details">
+                    <h3 class="actual" title="Actual Temperature">99°F</h3>
+                    <h4 class="feels-like" title="Feels Like">109°F</h4>
+                </article>
+
+                <article class="info-columns details">
+                    <span class="humidity" title="Humidity">100%</span>
+                    <span class="wind" title="Wind">12 mph</span>
+                </article>
+
+                <article class="info-columns sun">
+                    <span class="sunrise" title="Sunrise">5:00 am</span>
+                    <span class="sunset" title="Sunset">8:00 pm</span>
+                </article>
+
+            </article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Always Take The Weather With You</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
