@@ -8,7 +8,6 @@ article {
     &.weather-search {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
         align-content: center;
         background: var(--color-2);
         color: var(--color-4);
@@ -18,11 +17,15 @@ article {
 
         input {
             all: unset;
+            flex: 1 0 auto;
+            width: 100%;
+            width: calc(100% - 2rem);
             text-align: left;
         }
 
         button {
             all: unset;
+            flex: 0 1 auto;
             width: 2rem;
             height: 2rem;
             cursor: pointer;
@@ -41,16 +44,25 @@ article {
         display: none;
         header {
             h2 {
-                font-size: calc(var(--font-size)*3);
+                margin: 0 auto;
+                font-size: calc(var(--font-size)*3.5);
             }
         }
         .weather-icon {
             picture {
                 display: inline-block;
                 margin: 0 auto;
-                padding: 0;
-                width: 6.25rem;
-                height: 6.25rem;                
+                padding: 0;   
+                width: 100%;
+                max-width: 6.25rem;
+                height: 100%;
+                max-height: 6.25rem;  
+                > img {
+                    width: 100%;
+                    max-width: 6.25rem;
+                    height: 100%;
+                    max-height: 6.25rem;  
+                }           
             }
             figcaption {
                 text-transform: capitalize;
@@ -60,11 +72,11 @@ article {
 
             margin-block-end: calc(var(--spacing)*2.5);
             .actual {
-                font-size: calc(var(--font-size)*2);
+                font-size: calc(var(--font-size)*3.5);
                 line-height: calc(var(--line-height)*.75);
             }
             .feels-like {
-                font-size: calc(var(--font-size)*.95);
+                font-size: calc(var(--font-size)*1);
                 em {
                     font-style: normal;
                 }
@@ -83,7 +95,7 @@ article {
                 display: inline-flex;
                 flex-flow: row nowrap;
                 align-content: center;
-                font-size: calc(var(--font-size)*1.25);
+                font-size: calc(var(--font-size)*1);
                 line-height: calc(var(--line-height)*.75);
                 &:first-of-type {
                     text-align: left;
@@ -94,8 +106,8 @@ article {
                         background-size: cover;
                         background-position: left center;
                         background-repeat: none;
-                        width: 1.5rem;
-                        height: 1.5rem;
+                        width: 1.25rem;
+                        height: 1.25rem;
                     }
                 }
                 &:last-of-type {
@@ -107,8 +119,8 @@ article {
                         background-size: cover;
                         background-position: left center;
                         background-repeat: none;
-                        width: 1.5rem;
-                        height: 1.5rem;
+                        width: 1.25rem;
+                        height: 1.25rem;
                     }
                 }
 

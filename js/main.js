@@ -31,6 +31,8 @@ async function checkWeather(city){
             weatherIcon.innerHTML = '<img src="img/clouds.svg" alt="Clouds" />'
         } else if (data.weather[0].main == "Drizzle") {
             weatherIcon.innerHTML = '<img src="img/drizzle.svg" alt="Drizzle" />'
+        } else if (data.weather[0].main == "Fog") {
+            weatherIcon.innerHTML = '<img src="img/fog.svg" alt="Fog" />'
         } else if (data.weather[0].main == "Mist") {
             weatherIcon.innerHTML = '<img src="img/mist.svg" alt="Mist" />'
         } else if (data.weather[0].main == "Rain") {
