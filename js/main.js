@@ -39,6 +39,10 @@ async function checkWeather(city){
             weatherIcon.innerHTML = '<img src="img/rain.svg" alt="Rain" />'
         } else if (data.weather[0].main == "Snow") {
             weatherIcon.innerHTML = '<img src="img/snow.svg" alt="Snow" />'
+        } else if (data.weather[0].main == "Thunderstorm") {
+            weatherIcon.innerHTML = '<img src="img/thunderstorm.svg" alt="Thunderstorm" />'
+        } else {
+            weatherIcon.innerHTML = '<img src="img/else.svg" alt="It`s Not All Raindows &amp; Butterflies" />'
         }
     
         document.querySelector(".weather-display").style.display = "block";
